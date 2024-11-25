@@ -22,7 +22,7 @@ jobs:
       options: --tmpfs /build:rw --user 0:0
     steps:
       - name: "fetch artifacts"
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: nightly-neon.yml
           workflow_conclusion: success
